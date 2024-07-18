@@ -12,8 +12,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(./background.avif) no-repeat;
-  background-position: center;
+  background: url(./img4.webp) no-repeat;
+  background-position-y: center;
+  /* background-position: center; */
   background-size: cover;
 }
 
@@ -23,13 +24,13 @@ body {
   min-height: 400px;
   padding: 30px;
   background: transparent;
-  border: 2px solid #e6b7eca1;
+  border: 2px solid #6442afa1;
   border-radius: 10px;
   backdrop-filter: blur(15px);
 }
 
 h1 {
-  color: #eee;
+  color: #6442afa1;
   text-align: center;
   margin-bottom: 36px;
 }
@@ -45,21 +46,21 @@ h1 {
   outline: none;
   padding: 10px 10px 10px 20px;
   background-color: transparent;
-  border: 2px solid #e6b7eca1;
+  border: 2px solid #6442afa1;
   border-radius: 30px;
-  color: #eee;
+  color: black;
   font-size: 16px;
   margin-right: 10px;
 }
 
 .todo-input::placeholder {
-  color: #bfbfbf;
+  color: #000000;
 }
 
 .add-button {
   border: none;
   outline: none;
-  background: #e6b7eca1;
+  background: #6442afa1;
   color: #fff;
   font-size: 35px;
   cursor: pointer;
@@ -78,11 +79,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #463c7b;
+  background-color: white;
   border-radius: 5px;
   margin: 10px 0;
   padding: 10px 12px;
-  border: 2px solid #e6b7eca1;
+  border: 2px solid #6442afa1;
   transition: all 0.2s ease;
 }
 
@@ -95,7 +96,8 @@ h1 {
 }
 
 .todo:hover {
-  background-color:#e6b7eca1;
+  background-color:#6442afa1;
+  color: #fff;
 }
 
 .todo label {
@@ -104,7 +106,10 @@ h1 {
   display: flex;
   align-items: center;
   font-family: 'Roboto', sans-serif;
-  color: #eee;
+  color: #000000;
+}
+.todo label:hover{
+  color:#fff;
 }
 
 .todo span {
@@ -120,7 +125,7 @@ span::before {
   position: absolute;
   margin-left: -30px;
   border-radius: 100px;
-  border: 2px solid #e6b7eca1;
+  border: 2px solid #6442afa1;
 }
 
 input[type='checkbox'] {
@@ -144,7 +149,7 @@ input:checked + span {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  color: #eee;
+  color: rgba(0, 0, 0, 0.252);
   font-size: 24px;
 }
 
@@ -154,7 +159,7 @@ input:checked + span {
 }
 
 .todos-container::-webkit-scrollbar-track  {
-  background: rgb(247, 247, 247);
+  background: rgba(247, 247, 247, 0.627);
   border-radius: 20px
 }
 
@@ -167,7 +172,7 @@ input:checked + span {
 }
 
 .todos-container::-webkit-scrollbar-thumb  {
-  background: #d5d5d5;
+  background: rgba(78, 77, 77, 0.329);
   border-radius: 20px;
 }
 
@@ -178,10 +183,10 @@ input:checked + span {
 }
 
 .filter {
-  color: #eee;
+  color: black;
   padding: 5px 15px;
   border-radius: 100px;
-  border: 2px solid #e6b7eca1;
+  border: 2px solid #6442afa1;
   transition: all 0.2s ease;
   cursor: pointer;
 }
@@ -192,7 +197,7 @@ input:checked + span {
 
 .delete-all {
   display: flex;
-  color: #eee;
+  color: black;
   padding: 7px 15px;
   cursor: pointer;
   transition: all 0.2s ease;
