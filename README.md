@@ -17,3 +17,10 @@ To run this project locally, follow these steps:
    ```bash
    git clone https://github.com/Princi123sharma/Todo-list.git
 
+2. **Navigate to the project directory:**
+   ```bash
+   cd todo-list
+
+3. ***Open the `index.html` file in your web browser:**
+   ```bash
+   open index.html
